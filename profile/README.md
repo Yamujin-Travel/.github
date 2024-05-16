@@ -1,12 +1,104 @@
-## Hi there 👋
+## ✌ 기술스택
 
-<!--
+### 프론트엔드
 
-**Here are some ideas to get you started:**
+- 프로그래밍 언어 `TypeScript`
+- 프레임워크 `Vue3`
+- 상태관리 `Pinia (+ Plugin: Pinia-plugin-persistedstate)`
+- 비동기 통신 `Axios`
+- CSS 프레임워크 `Tailwind CSS`
+- 데이터 시각화 `Chart.js`
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+### **백엔드**
+
+- 프로그래밍 언어 `Python`
+- 프레임워크 `Django` `Django REST Framework` `Django-rest-auth`
+- DBMS `SQLite`
+- Python Imaging Library(PIL) `Pillow`
+- 문서화 라이브러리 `DRF-Spectacular`
+
+## ✌ 개발 진행 방식
+
+1. `Otters repository`를 `clone`합니다.
+2. `main branch`에서 `issue`로 분기하여 작업을 진행합니다.
+3. 작업이 마무리되면 `main branch`로 `PR`을 고지합니다. 
+4. `PR Review`를 진행한 후 `main branch`로 `merge`합니다. 
+
+## ✌ 브랜치 전략
+
+Trunk Based Development
+
+[Git Flow에서 트렁크 기반 개발으로 나아가기 - 맘시터 기술블로그](https://tech.mfort.co.kr/blog/2022-08-05-trunk-based-development/)
+
+![1](https://github.com/Yamujin-Travel/.github/assets/87296259/ac9cfc4c-4c6e-4e24-8c75-7be1bc03d067)
+
+
+## ✌ 업무 분담 내역
+
+- 프로젝트 진행 기간(8일): 2024/05/16(목) ~ 2024/05/23(목)
+
+|  | 역할 및 구현 사항 |
+| --- | --- |
+| 박세은(팀장) | Front-end / Design:  |
+| 곽성재 | Front-end / Back-end:  |
+
+## ✌ 페이지
+
+1. **메인 페이지**
+- 회원가입, 로그인 버튼 제공
+- 사이트에서 제공하는 기능 한눈에 보기(carousel 고려)
+
+2. **로그인 페이지**
+- 아이디, 비밀번호를 입력받아 로그인 기능 제공
+- 비밀번호 hidden / unHidden 아이콘 클릭시 비밀번호 노출 토글
+- 세션 만료시 로그인 페이지로 redirect
+
+3. **회원가입 페이지**
+- 메인페이지 - 회원가입 버튼 클릭 시 / 로그인 페이지 - 회원가입 버튼 클릭 시
+- 입력 받는 정보: 아이디 / 비밀번호 / 비밀번호 확인 / 이메일 / 닉네임
+
+4. **프로필 페이지**
+- 회원 정보 관리 - 회원번호(pk) / 아이디 / 닉네임 / 이메일 정보 표시 (수정 기능 제공) / 프로필 이미지 (디폴트 이미지1, 2, 3 선택 가능, 모달사용)
+- 가입 상품 관리 - 금융 상품 비교 페이지에서 가입한 상품 모아보기 + 가입 해지 / 차트 정보 제공
+
+5. **상품 추천 페이지**
+- 맞춤 상품 추천 기능 제공(하단 추천 알고리즘 적용)
+
+6. **금융상품 비교 페이지**
+- 정기 예금 검색하기 - 정기 예금 정보 표시 / 드롭다운으로 은행 선택
+- 정기 적금 검색하기 - 정기 적금 정보 표시 / 드롭다운으로 은행 선택
+- 공통: 상품 클릭 시 상품 정보 모달 표시(가입 및 해지 기능 제공)
+
+7. **환율 계산 페이지**
+- 환율 계산기 기능 제공
+- 입력받는 정보: 통화 / 통화량 / 환전량 / 기준(받을때, 보낼때, 매매)
+- 네이버 환율 API - 대표 통화 1개월 환율 추이 보여주기
+- 카카오맵 API
+    - 입력받는 정보: 광역시/도, 시/군/구
+    - 출력하는 결과: 근처 환전소 정보(클릭시 해당 지점 정보를 제공하는 모달 제공)
+
+8. **주변 은행 검색 페이지**
+- 주변 은행 검색 기능 제공
+- 입력받는 정보: 광역시/도, 시/군/구, 은행
+- 결과 이미지는 마우스 클릭으로 이동시킬 수 있음
+- 장소 클릭시 해당 지점 영업 정보를 제공하는 모달 제공
+
+9. **게시판 페이지**
+- 자유 게시판 - 유저들끼리 자유롭게 소통할 수 있는 게시판 제공
+- QnA 게시판 - 서비스에 대한 QnA를 남길 수 있는 게시판 제공
+- 공통: 게시물 10개단위로 페이지네이션 기능 제공
+
+10. **Not Found 페이지**
+- 잘못된 url로 이동했을 때 redirect하여 홈 / 이전페이지 로 이동할 수 있도록 기능 제공
+
+## ✌ 추천 알고리즘 소개
+
+여행 일정 맞춤 적금 추천 
+
+1. 여행지 / 여행 일정을 입력받는다. 
+2. 여행 출발일 기준 1주일 이전까지 만기 가능한 적금 상품을 조회한다. 
+3. 조회한 적금 상품 중 Top5(적금 금리 기준) 상품을 표시한다.
+4. 상품 선택시 기간 / 금액을 입력받는다. 
+5. 해당 기간 + 금액을 적금 상품에 적용하여 만기 시 받을 수 있는 금액을 표시한다.
+    1. 원화 기준 금액을 표시하고 옆에 여행지 통화로 표시한 금액을 표시한다.(환율 계산 방식은 현재시점 환율 매입 환율 적용) 
+    2. 3번 부터 가입을 원하는 사용자가 해당 상품을 가입할 수 있도록 가입 / 해지 버튼을 제공한다.
